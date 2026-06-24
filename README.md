@@ -7,7 +7,7 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 
 ---
 
-## Paso a Paso Completo del Despliegue (36 Pasos)
+## Paso a Paso Completo del Despliegue (34 Pasos)
 
 
 
@@ -112,12 +112,6 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 ### Paso 34: Prueba de carga de archivos mediante FTP
 ![Paso 34](./36_image17.png)
 
-### Paso 35: Verificación de los archivos subidos en el servidor web
-![Paso 35](./10_image34.png)
-
-### Paso 36: Confirmación final del despliegue de ambos servidores (Linux y Windows)
-![Paso 36](./10_image34.png)
-
 ---
 
 ## Resumen de Configuraciones
@@ -159,7 +153,7 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 - Servidor FTP
 - Página de bienvenida con nombre del estudiante y logo de Duoc UC
 
-**Pasos realizados (Pasos 11-36):**
+**Pasos realizados (Pasos 11-34):**
 11. Creación de la instancia EC2 con Windows Server 2019 Base
 12. Configuración del Security Group permitiendo tráfico RDP, HTTP y FTP
 13. Creación del par de claves para desencriptar la contraseña de administrador
@@ -184,14 +178,12 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 32. Verificación de conectividad al servidor FTP mediante cliente FTP
 33. Descarga de archivos a través del servidor FTP
 34. Prueba de carga de archivos mediante FTP
-35. Verificación de los archivos subidos en el servidor web
-36. Confirmación final del despliegue de ambos servidores (Linux y Windows)
 
 ---
 
 ## Evidencias
 
-Todas las capturas de pantalla del proceso (36 imágenes en total) se encuentran en este repositorio, numeradas del 01 al 36 en el orden secuencial en que se realizaron los pasos. Cada paso incluye su correspondiente evidencia fotográfica del despliegue.
+Todas las capturas de pantalla del proceso (34 imágenes en total) se encuentran en este repositorio, numeradas del 01 al 36 en el orden secuencial en que se realizaron los pasos.
 
 ---
 
@@ -199,4 +191,4 @@ Todas las capturas de pantalla del proceso (36 imágenes en total) se encuentran
 
 - Ambos servidores fueron desplegados en la región `us-east-1` (Norte de Virginia) utilizando AWS Academy Learner Lab.
 - Las contraseñas y claves privadas utilizadas durante el proceso no se incluyen en este repositorio por motivos de seguridad.
-- La sección de Windows Server comprende los pasos 11-36, incluyendo la instalación y configuración completa de IIS, FTP, y la página de bienvenida.
+- La sección de Windows Server comprende los pasos 11-34, incluyendo la instalación y configuración completa de IIS, FTP, y la página de bienvenida.
