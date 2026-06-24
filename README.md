@@ -15,17 +15,36 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 - Security Group: SSH (puerto 22) y HTTP (puerto 80) abiertos, origen 0.0.0.0/0
 
 **Pasos realizados:**
+
 1. Creación de la instancia EC2 con RHEL 9.
+   ![Paso 1](./01_image13.png)
+
 2. Configuración del Security Group permitiendo tráfico SSH y HTTP.
+   ![Paso 2](./02_image10.png)
+
 3. Creación del par de claves (key pair) para acceso seguro.
-   01_image13.png
-5. Conexión remota a la instancia mediante PuTTY (SSH).
-6. Instalación del servidor web Apache (`httpd`).
-7. Verificación del estado del servicio e inicio del mismo (`systemctl status/start httpd`).
-8. Descarga del logo de Duoc UC y alojamiento en el servidor (`/var/www/html/`).
-9. Modificación de la página de bienvenida (`index.html`) con nombre del estudiante y logo institucional.
-10. Verificación del sitio web desde el navegador.
-11. Detención de la instancia.
+   ![Paso 3](./03_image35.png)
+
+4. Conexión remota a la instancia mediante PuTTY (SSH).
+   ![Paso 4](./04_image3.png)
+
+5. Instalación del servidor web Apache (`httpd`).
+   ![Paso 5](./05_image15.png)
+
+6. Verificación del estado del servicio e inicio del mismo (`systemctl status/start httpd`).
+   ![Paso 6](./06_image32.png)
+
+7. Descarga del logo de Duoc UC y alojamiento en el servidor (`/var/www/html/`).
+   ![Paso 7](./08_image27.png)
+
+8. Modificación de la página de bienvenida (`index.html`) con nombre del estudiante y logo institucional.
+   ![Paso 8](./09_image6.png)
+
+9. Verificación del sitio web desde el navegador.
+   ![Paso 9](./11_image4.png)
+
+10. Detención de la instancia.
+    ![Paso 10](./12_image20.png)
 
 ---
 
@@ -37,23 +56,38 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 - Security Group: RDP (puerto 3389), HTTP (puerto 80) y FTP (puerto 21) abiertos, origen 0.0.0.0/0
 
 **Pasos realizados:**
+
 1. Creación de la instancia EC2 con Windows Server 2019 Base.
+   ![Paso 1](./13_image2.png)
+
 2. Configuración del Security Group permitiendo tráfico RDP, HTTP y FTP.
+   ![Paso 2](./14_image7.png)
+
 3. Creación del par de claves para desencriptar la contraseña de administrador.
+   ![Paso 3](./15_image33.png)
+
 4. Conexión remota mediante Escritorio Remoto (RDP).
+
 5. Instalación del rol "Servidor web (IIS)" junto con el servicio FTP (FTP Server).
+
 6. Verificación de la correcta instalación del rol y servicios.
+
 7. Descarga del logo de Duoc UC y alojamiento en el servidor (`C:\inetpub\wwwroot\`).
+
 8. Creación de una página de bienvenida (`index.html`) con nombre del estudiante y logo institucional.
+
 9. Configuración de un sitio FTP en IIS sobre la misma carpeta de contenido.
+
 10. Verificación del sitio web (HTTP) y del servicio FTP desde el navegador.
+    ![Paso final](./16_image9.png)
+
 11. Detención de la instancia.
 
 ---
 
 ## Evidencias
 
-Todas las capturas de pantalla del proceso se encuentran en la carpeta [`/capturas`](./capturas), numeradas en el orden en que se realizaron los pasos.
+Todas las capturas de pantalla del proceso se encuentran en este repositorio, numeradas en el orden en que se realizaron los pasos.
 
 ---
 
