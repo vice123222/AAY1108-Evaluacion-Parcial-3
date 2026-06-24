@@ -35,6 +35,8 @@ Implementación de un servidor web Apache en Red Hat Enterprise Linux 9 en una i
 
 *Se configura la instancia inicial con Red Hat Enterprise Linux 9, seleccionando el tipo de instancia t3.medium para garantizar suficientes recursos computacionales (2 vCPU y 4 GB de RAM).*
 
+![Paso 1](./10_image34.png)
+
 **Acciones realizadas:**
 - Selección de AMI: Red Hat Enterprise Linux 9
 - Tipo de instancia: t3.medium
@@ -47,8 +49,8 @@ Implementación de un servidor web Apache en Red Hat Enterprise Linux 9 en una i
 
 *Se configuran las reglas del Security Group para permitir conexiones entrantes en puerto 22 (SSH) y puerto 80 (HTTP) desde cualquier dirección IP (0.0.0.0/0) para facilitar acceso remoto y consultas web.*
 
-![Paso 2](./02_image10.png)
-![Paso 3](./03_image35.png)
+![Paso 2 - Security Group SSH](./02_image10.png)
+![Paso 2 - Security Group HTTP](./03_image35.png)
 
 **Reglas configuradas:**
 - **Inbound SSH:** Protocolo TCP, Puerto 22, Origen 0.0.0.0/0
@@ -61,7 +63,7 @@ Implementación de un servidor web Apache en Red Hat Enterprise Linux 9 en una i
 
 *Se genera un par de claves RSA que permite autenticación segura sin contraseña en la instancia Linux. La clave privada se descarga en formato .pem para uso posterior en herramientas SSH como PuTTY.*
 
-![Paso 1](./01_image13.png)
+![Paso 3](./01_image13.png)
 
 **Proceso:**
 - Generación de par de claves RSA de 2048 bits
@@ -636,7 +638,7 @@ Implementación de un servidor web IIS con servicio FTP en Windows Server 2019 e
 - **Tipo de instancia:** t3.medium (2 vCPU, 4 GB RAM)
 - **Almacenamiento:** 30 GB EBS gp3 por instancia
 - **Total de pasos documentados:** 34 (10 Linux + 24 Windows)
-- **Total de imágenes evidencia:** 34 capturas de pantalla
+- **Total de imágenes evidencia:** 36 capturas de pantalla
 
 ## Archivos Generados
 - `index.html` (Linux) - `/var/www/html/index.html`
@@ -656,7 +658,7 @@ Implementación de un servidor web IIS con servicio FTP en Windows Server 2019 e
 - ✓ Autenticación por credenciales en ambos servidores
 
 ## Evidencias de Despliegue
-Todas las capturas de pantalla (34 imágenes) están numeradas del 01 al 36 y documentan:
+Todas las capturas de pantalla (36 imágenes) están numeradas del 01 al 36 y documentan:
 - Configuración de instancias EC2
 - Reglas de Security Groups
 - Instalación de servicios
