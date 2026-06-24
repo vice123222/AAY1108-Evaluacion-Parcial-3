@@ -9,13 +9,14 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 
 ## Paso a Paso Completo del Despliegue (16 Pasos)
 
-### Paso 1: Creación de la instancia EC2 con RHEL 9
-![Paso 1](./01_image13.png)
+
 
 ### Paso 2: Configuración del Security Group permitiendo tráfico SSH y HTTP
-![Paso 2](./02_image10.png)
+
 
 ### Paso 3: Creación del par de claves (key pair) para acceso seguro
+![Paso 1](./01_image13.png)
+![Paso 2](./02_image10.png)
 ![Paso 3](./03_image35.png)
 
 ### Paso 4: Conexión remota a la instancia mediante PuTTY (SSH)
