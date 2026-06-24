@@ -630,43 +630,6 @@ Implementación de un servidor web IIS con servicio FTP en Windows Server 2019 e
 
 ---
 
-# 📝 NOTAS TÉCNICAS
-
-## Información General
-- **Región AWS:** us-east-1 (Norte de Virginia)
-- **Plataforma:** AWS Academy Learner Lab
-- **Tipo de instancia:** t3.medium (2 vCPU, 4 GB RAM)
-- **Almacenamiento:** 30 GB EBS gp3 por instancia
-- **Total de pasos documentados:** 34 (10 Linux + 24 Windows)
-- **Total de imágenes evidencia:** 36 capturas de pantalla
-
-## Archivos Generados
-- `index.html` (Linux) - `/var/www/html/index.html`
-- `index.html` (Windows) - `C:\inetpub\wwwroot\index.html`
-- Logo Duoc UC (ambos servidores)
-- Clave privada SSH (formato .pem)
-- Credenciales desencriptadas (Windows)
-
-## Protocolos de Acceso
-- **Linux:** SSH (puerto 22) + HTTP (puerto 80)
-- **Windows:** RDP (puerto 3389) + HTTP (puerto 80) + FTP (puerto 21)
-
-## Seguridad
-- ⚠️ Las contraseñas y claves privadas NO se incluyen en repositorio
-- ✓ Security Groups configurados restrictivamente
-- ✓ Usuario FTP con permisos NTFS limitados
-- ✓ Autenticación por credenciales en ambos servidores
-
-## Evidencias de Despliegue
-Todas las capturas de pantalla (36 imágenes) están numeradas del 01 al 36 y documentan:
-- Configuración de instancias EC2
-- Reglas de Security Groups
-- Instalación de servicios
-- Páginas web funcionales
-- Pruebas de conectividad
-- Transferencia de archivos FTP
-
----
 
 **Fecha de realización:** 2026-06-24  
 **Estudiante:** Vicente Salazar  
