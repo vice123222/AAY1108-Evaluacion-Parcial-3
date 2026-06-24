@@ -7,7 +7,7 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 
 ---
 
-## Paso a Paso Completo del Despliegue (16 Pasos)
+## Paso a Paso Completo del Despliegue (36 Pasos)
 
 
 
@@ -52,6 +52,72 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 ### Paso 14: Conexión remota mediante Escritorio Remoto (RDP)
 ![Paso 14](./16_image9.png)
 
+### Paso 15: Acceso al Administrador del servidor (Server Manager)
+![Paso 15](./17_image.png)
+
+### Paso 16: Instalación del rol "Servidor web (IIS)"
+![Paso 16](./18_image.png)
+
+### Paso 17: Configuración de IIS y habilitación de características HTTP
+![Paso 17](./19_image.png)
+
+### Paso 18: Instalación del servicio FTP (FTP Server)
+![Paso 18](./20_image.png)
+
+### Paso 19: Configuración del servicio FTP en IIS
+![Paso 19](./21_image.png)
+
+### Paso 20: Verificación de los servicios IIS y FTP en estado "En ejecución"
+![Paso 20](./22_image.png)
+
+### Paso 21: Descarga del logo de Duoc UC en Windows
+![Paso 21](./23_image.png)
+
+### Paso 22: Navegación a la carpeta raíz del sitio web IIS (`C:\inetpub\wwwroot\`)
+![Paso 22](./24_image.png)
+
+### Paso 23: Colocación del logo de Duoc UC en la carpeta raíz del sitio
+![Paso 23](./25_image.png)
+
+### Paso 24: Creación de la página de bienvenida (`index.html`) con nombre del estudiante
+![Paso 24](./26_image.png)
+
+### Paso 25: Edición del contenido HTML con nombre e información del estudiante
+![Paso 25](./27_image.png)
+
+### Paso 26: Inserción del logo en la página HTML
+![Paso 26](./28_image.png)
+
+### Paso 27: Guardado de la página `index.html` en `C:\inetpub\wwwroot\`
+![Paso 27](./29_image.png)
+
+### Paso 28: Verificación del sitio web desde el navegador (Servidor Windows)
+![Paso 28](./30_image.png)
+
+### Paso 29: Configuración de permisos FTP para usuarios
+![Paso 29](./31_image.png)
+
+### Paso 30: Creación de cuenta de usuario para acceso FTP
+![Paso 30](./32_image.png)
+
+### Paso 31: Asignación de permisos FTP al usuario creado
+![Paso 31](./33_image.png)
+
+### Paso 32: Verificación de conectividad al servidor FTP mediante cliente FTP
+![Paso 32](./34_image.png)
+
+### Paso 33: Descarga de archivos a través del servidor FTP
+![Paso 33](./35_image.png)
+
+### Paso 34: Prueba de carga de archivos mediante FTP
+![Paso 34](./36_image.png)
+
+### Paso 35: Verificación de los archivos subidos en el servidor web
+![Paso 35](./37_image.png)
+
+### Paso 36: Confirmación final del despliegue de ambos servidores (Linux y Windows)
+![Paso 36](./38_image.png)
+
 ---
 
 ## Resumen de Configuraciones
@@ -93,19 +159,39 @@ Este repositorio contiene la evidencia fotográfica del despliegue de dos servid
 - Servidor FTP
 - Página de bienvenida con nombre del estudiante y logo de Duoc UC
 
-**Pasos realizados (Pasos 11-16):**
+**Pasos realizados (Pasos 11-36):**
 11. Creación de la instancia EC2 con Windows Server 2019 Base
 12. Configuración del Security Group permitiendo tráfico RDP, HTTP y FTP
 13. Creación del par de claves para desencriptar la contraseña de administrador
 14. Conexión remota mediante Escritorio Remoto (RDP)
-15. Instalación del rol "Servidor web (IIS)" junto con el servicio FTP (FTP Server)
-16. Verificación de la correcta instalación del rol y servicios, descarga del logo de Duoc UC, creación de página de bienvenida, configuración del sitio FTP
+15. Acceso al Administrador del servidor (Server Manager)
+16. Instalación del rol "Servidor web (IIS)"
+17. Configuración de IIS y habilitación de características HTTP
+18. Instalación del servicio FTP (FTP Server)
+19. Configuración del servicio FTP en IIS
+20. Verificación de los servicios IIS y FTP en estado "En ejecución"
+21. Descarga del logo de Duoc UC en Windows
+22. Navegación a la carpeta raíz del sitio web IIS (C:\inetpub\wwwroot\)
+23. Colocación del logo de Duoc UC en la carpeta raíz del sitio
+24. Creación de la página de bienvenida (index.html) con nombre del estudiante
+25. Edición del contenido HTML con nombre e información del estudiante
+26. Inserción del logo en la página HTML
+27. Guardado de la página index.html en C:\inetpub\wwwroot\
+28. Verificación del sitio web desde el navegador (Servidor Windows)
+29. Configuración de permisos FTP para usuarios
+30. Creación de cuenta de usuario para acceso FTP
+31. Asignación de permisos FTP al usuario creado
+32. Verificación de conectividad al servidor FTP mediante cliente FTP
+33. Descarga de archivos a través del servidor FTP
+34. Prueba de carga de archivos mediante FTP
+35. Verificación de los archivos subidos en el servidor web
+36. Confirmación final del despliegue de ambos servidores (Linux y Windows)
 
 ---
 
 ## Evidencias
 
-Todas las capturas de pantalla del proceso (16 imágenes en total) se encuentran en este repositorio, numeradas del 01 al 16 en el orden secuencial en que se realizaron los pasos.
+Todas las capturas de pantalla del proceso (36 imágenes en total) se encuentran en este repositorio, numeradas del 01 al 36 en el orden secuencial en que se realizaron los pasos.
 
 ---
 
@@ -113,3 +199,4 @@ Todas las capturas de pantalla del proceso (16 imágenes en total) se encuentran
 
 - Ambos servidores fueron desplegados en la región `us-east-1` (Norte de Virginia) utilizando AWS Academy Learner Lab.
 - Las contraseñas y claves privadas utilizadas durante el proceso no se incluyen en este repositorio por motivos de seguridad.
+- La sección de Windows Server comprende los pasos 11-36, incluyendo la instalación y configuración completa de IIS, FTP, y la página de bienvenida.
